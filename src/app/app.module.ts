@@ -4,11 +4,15 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { SearchEngineCarComponent } from './search-engine-car/search-engine-car.component';
+import { CarResultComponent } from './car-result/car-result.component';
+import { CarSortingComponent } from './car-sorting/car-sorting.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchEngineCarComponent
+    SearchEngineCarComponent,
+    CarResultComponent,
+    CarSortingComponent
   ],
   imports: [
     BrowserModule,

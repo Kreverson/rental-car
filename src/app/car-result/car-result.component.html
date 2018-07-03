@@ -1,0 +1,69 @@
+<div class="store-products" *ngFor="let product of products">
+            <div class="col-md-8 product">
+                <div class="row">
+                    <!--{{#if product.discount}}-->
+                    <div class="tag-discount">
+                        <p>Desconto</p>
+                        <p>{{product.discount}}%</p>
+                    </div>
+                    <!--{{/if}}-->
+                    <div class="product-favorite">
+                        <div class="favorite-{{product.isFavorite}}"></div>
+                    </div>
+                    <div class="col-md-4 product-image">
+
+                        <img [src]="product.urlImage" />
+                    </div>
+                    <div class="col-md-6 product-description">
+                        <p class="product-name">{{product.name}}</p>
+                        <div>
+                            <ul>
+                                <li><label class="text-uppercase">Código da taxa:</label> {{product.taxcode}}</li>
+                                <li class="text-uppercase">{{product.vehicles}}</li>
+                            </ul>
+                        </div>
+                        <ul ng-repeat="description in product.description">
+                            <li>{{description}}</li>
+                        </ul>
+                        <div class="product-details">
+                            <div class="details-true" *ngIf="detail == product.hasDetail">
+                                <p>Ver detalhes -</p>
+                                <div class="icodetails"></div>
+                            </div>
+                            <div class="details-true" *ngIf="detail != product.hasDetail">
+                                <p>Ver detalhes +</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-details-text details-true" *ngIf="serialItens == product.hasDetail">
+                    {{product.details}}
+                </div>
+                <div class="row product-serialItens">
+                    <div class="col-md-12">
+                        <ul *ngFor="let item of product.serialItens">
+                            <li><div class="{{item.iconName}}"></div>{{item.name}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 product-price">
+                <div class="product-price-description">
+                    <p class="price-title ">Total da Locação</p>
+                    <div *ngIf="product.discount != 0">
+                    <p class="price-txt">de R$ {{product.price}}</p>
+                    <p class="price-txt">por <label class="price-txt-blue">R$ <label class="price-value">{{product.pricePromotion}}</label></label></p>
+                    </div>
+                    <div *ngIf="product.discount == 0">
+                    <p class="price-txt"><label class="price-txt-blue">R$ <label class="price-value">{{product.price}}</label></label></p>
+                    </div>
+                    <p class="price-txt"><label class="price-txt-blue">em até 10x</label> </p>
+                </div>
+                <div class="btn-product">
+                    <div class="product-btn-rent"></div>
+                </div>
+                <div class="price-info">
+                    Taxas inclusas
+                </div>
+           
+        </div>
