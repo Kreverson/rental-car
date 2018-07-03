@@ -1,0 +1,34 @@
+.store-ct-left {background-color:rgb(255,220,44);margin:10px;padding-bottom:65px;min-width:273px !important;     padding: 10px;}
+.store-ct-left input {float:left;}
+.store-ct-left .divicocheck {width:16px;height:16px;position:absolute;cursor:pointer;}
+.store-ct-left .group-changeLocal{margin:40px 0px 0px 0px;    }
+.store-ct-left .group-changeLocal > label {color:rgb(38,60,112) !important;margin-left:10px;}
+.store-ct-left label {color:rgb(99,81,9) !important;text-transform:uppercase;font-size:9px;margin-bottom:0px;}
+.store-ct-left .form-group .form-control {color:rgb(54,88,164) !important;}
+.store-ct-left .controls-calendar {margin-bottom:37px !important;}
+.store-ct-left .controls-calendar .input-calendar {border-radius:4px;background:white;position:absolute;margin-bottom:10px;}
+.store-ct-left .controls-calendar .calendar-separator {display:inline;width:37px;height:30px;float:left;margin-top:2px;}
+.store-ct-left .controls-calendar .input-calendar input {background:transparent;display:inline;float:left;}
+.store-ct-left .controls-calendar .input-calendar select {background:transparent;display:inline;float:left;}
+.store-ct-left .controls-calendar .input-calendar input {width:113px;}
+.store-ct-left .controls-calendar .input-calendar select {width:93px;}
+.store-ct-left .panel-promotion {border:1px solid rgb(105,180,46);margin-top:45px;}
+.store-ct-left .panel-promotion .panel-head {background:rgb(105,180,46);border:1px solid rgb(105,180,46);}
+.store-ct-left .panel-promotion .panel-head label {color:white !important;text-transform:uppercase;margin-left:12px;font-size:12px;}
+.store-ct-left .panel-promotion .panel-body {background:rgb(255,241,171);padding-top:4px;padding-bottom:4px;padding-right:4px;padding-left:12px;}
+.store-ct-left .panel-promotion .panel-body ul {list-style-type:none;padding:0px;}
+.store-ct-left .panel-promotion .panel-body ul li {float:left;margin-right:20px;}
+.store-ct-left .panel-promotion .panel-body ul li input {margin-right:5px;}
+@media only screen and (min-width :320px) {
+.store-ct-left {margin-left:30px;}
+.store-ct-left .controls-calendar {position:relative;}
+.store-ct-left .controls-calendar .input-calendar {width:100%;}
+.store-ct-left .controls-calendar .input-calendar select {float:right;}
+}
+@media only screen and (max-width :320px) {
+.store-ct-left {width:273px !important;margin-left:30px;}
+}
+
+@media only screen and (min-width :1280px) {
+ .store-ct-left {margin:30px 0px 0px 50px;width:170px;padding-bottom:10px;}
+}
